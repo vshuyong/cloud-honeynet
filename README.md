@@ -75,9 +75,7 @@ I reviewed multiple incidents, including failed and successful login attempts as
 
 By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
 
-![Incident Details](images/incident-details.png)
-
----
+![Incident Details](images/incident-details.png
 
 ### Attacker IP Investigation
 

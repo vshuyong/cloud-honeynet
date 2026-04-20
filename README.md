@@ -41,9 +41,8 @@ During this project, I used Microsoft Sentinel to investigate security alerts an
 
 I reviewed multiple incidents, including failed and successful login attempts as well as brute-force attacks against both Windows and Linux virtual machines.
 
-![Incident Overview](images/incident-overview.png)
+![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/2e1c323ef1c4412d25a3f9a3f001bdcfa3da3438/Incident_Overview.jpg)
 
----
 
 ### Incident Analysis
 

@@ -8,7 +8,6 @@ In this project, I built a mini honeynet in Microsoft Azure and integrated multi
 
 I first observed activity in an insecure environment, then applied security hardening techniques and compared the results.
 
-
 ## Architecture Before Hardening
 
 In the initial setup, all resources were exposed to the public internet.
@@ -70,7 +69,6 @@ I reviewed multiple incidents, including failed and successful login attempts as
 
 ![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/d352ef755c1be71a5f0213790116445e18b9671e/Incident_overview2.jpg)
 
-
 ### Incident Analysis
 
 By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
@@ -88,46 +86,7 @@ Using Microsoft Sentinel’s investigation features, I analyzed attacker IP addr
 
 This information provided visibility into where the attacks were originating from and helped identify patterns in malicious activity.
 
-[![IP Investigation](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/397e061ea1efe90e3969b2264674ae4b1858a668/IP_Details.jpg)
-
-
-### Findings
-
-- Multiple brute-force attempts were detected from external IP addresses  
-- Attackers originated from different global locations  
-- Repeated login attempts targeted publicly exposed virtual machines  
-- High-severity alerts were generated for credential access attempts  
-
----
-
-### Outcome
-
-The investigation confirmed that the environment was actively targeted before hardening. After implementing security controls and monitoring the environment for 24 hours, no new attack activity was observed in the logs or maps. This demonstrates that the applied security measures were effective in preventing further unauthorized access.
-
-
-
-### Incident Analysis
-
-By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
-
-![Incident Details](images/incident-details.png)
-
----
-
-### Attacker IP Investigation
-
-Using Microsoft Sentinel’s investigation features, I analyzed attacker IP addresses and gathered detailed threat intelligence. This included:
-
-- Geographic location (country, city)  
-- Internet Service Provider (ISP)  
-- ASN (Autonomous System Number)  
-- Latitude and Longitude  
-
-This information provided visibility into where the attacks were originating from and helped identify patterns in malicious activity.
-
-![IP Investigation](images/ip-investigation.png)
-
----
+![IP Investigation](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/397e061ea1efe90e3969b2264674ae4b1858a668/IP_Details.jpg)
 
 ### Findings
 
@@ -136,20 +95,15 @@ This information provided visibility into where the attacks were originating fro
 - Repeated login attempts targeted publicly exposed virtual machines  
 - High-severity alerts were generated for credential access attempts  
 
----
-
 ### Outcome
 
 The investigation confirmed that the environment was actively targeted before hardening. After implementing security controls and monitoring the environment for 24 hours, no new attack activity was observed in the logs or maps. This demonstrates that the applied security measures were effective in preventing further unauthorized access.
-
-
 
 ## Conclusion
 
 This project demonstrates how proper cloud security configurations dramatically reduce real-world attack activity.
 
 By implementing NSG restrictions, private endpoints, and firewall rules, the attack surface was minimized and malicious traffic was effectively reduced.
-
 
 ## Key Skills Demonstrated
 

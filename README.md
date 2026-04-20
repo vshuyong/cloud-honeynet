@@ -33,6 +33,54 @@ This significantly reduced attack surface.
 
 ![After Hardening](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/ec416d99b380f1e57e5d8562473d02781eefd02c/Architecture_After.png)
 
+## Threat Investigation & Analysis
+
+During this project, I used Microsoft Sentinel to investigate security alerts and incidents generated from the honeynet environment. This allowed me to analyze real attack activity targeting the exposed resources before hardening.
+
+### Incident Overview
+
+I reviewed multiple incidents, including failed and successful login attempts as well as brute-force attacks against both Windows and Linux virtual machines.
+
+![Incident Overview](images/incident-overview.png)
+
+---
+
+### Incident Analysis
+
+By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
+
+![Incident Details](images/incident-details.png)
+
+---
+
+### Attacker IP Investigation
+
+Using Microsoft Sentinel’s investigation features, I analyzed attacker IP addresses and gathered detailed threat intelligence. This included:
+
+- Geographic location (country, city)  
+- Internet Service Provider (ISP)  
+- ASN (Autonomous System Number)  
+- Latitude and Longitude  
+
+This information provided visibility into where the attacks were originating from and helped identify patterns in malicious activity.
+
+![IP Investigation](images/ip-investigation.png)
+
+---
+
+### Findings
+
+- Multiple brute-force attempts were detected from external IP addresses  
+- Attackers originated from different global locations  
+- Repeated login attempts targeted publicly exposed virtual machines  
+- High-severity alerts were generated for credential access attempts  
+
+---
+
+### Outcome
+
+The investigation confirmed that the environment was actively targeted before hardening. After implementing security controls and monitoring the environment for 24 hours, no new attack activity was observed in the logs or maps. This demonstrates that the applied security measures were effective in preventing further unauthorized access.
+
 
 ## Log Sources Used
 
@@ -55,10 +103,9 @@ Before security controls, the environment received multiple attacks globally.
 
 ## Attack Maps (After Hardening)
 
-After hardening, attack activity dropped significantly.
+After hardening, attack activity dropped significantly. After 24 hours of applying security controls, I queried the attack maps in Microsoft Sentinel. No results were returned, indicating that no malicious inbound activity was detected during that period. This confirms that the implemented hardening measures—such as restricting NSGs, removing public exposure, and enforcing private access—were effective in preventing external attacks.
 
-![Attack Map After](images/map-after.png)
-
+![Attack Map After](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/b5dde6ead6611d6f131a3c6b3cedcc1836fc7546/Attack_Map_After.jpg)
 
 
 ## Conclusion

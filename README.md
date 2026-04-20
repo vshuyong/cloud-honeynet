@@ -19,8 +19,7 @@ In the initial setup, all resources were exposed to the public internet.
 
 This made the environment highly vulnerable to external attacks.
 
-![Before Hardening](images/before.png)
-
+![Before Hardening](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/b68861ea3bbeac7d1d95a9fd9951abe938866454/Architecture_Before.png)
 
 ## Architecture After Hardening
 

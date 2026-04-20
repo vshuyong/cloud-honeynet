@@ -88,9 +88,8 @@ Using Microsoft Sentinel’s investigation features, I analyzed attacker IP addr
 
 This information provided visibility into where the attacks were originating from and helped identify patterns in malicious activity.
 
-![IP Investigation](images/ip-investigation.png)
+[![IP Investigation](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/397e061ea1efe90e3969b2264674ae4b1858a668/IP_Details.jpg)
 
----
 
 ### Findings
 

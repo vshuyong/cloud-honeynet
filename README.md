@@ -47,6 +47,8 @@ Before security controls, the environment received multiple attacks globally.
 
 ![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/7f7e454bdd6cb438cfa334ff3df4bf4f8c35bb9c/linux_before.jpg)
 
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/77a943074b8b14fa0d468ff9f93f0218c5aa1e47/linux_before2.jpg)
+
 
 ## Attack Maps (After Hardening)
 

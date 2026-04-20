@@ -51,6 +51,8 @@ Before security controls, the environment received multiple attacks globally.
 
 ![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/79824ae4df17114107c0c7ff3bf7c202f28ae3d9/mssql_before.jpg)
 
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/12f7de76f4c02f453f61ae8a2bdf23910f2240f9/windows_before.jpg)
+
 ## Attack Maps (After Hardening)
 
 After hardening, attack activity dropped significantly.

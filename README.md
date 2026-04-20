@@ -101,14 +101,24 @@ The investigation confirmed that the environment was actively targeted before ha
 
 ## Conclusion
 
-This project demonstrates how proper cloud security configurations dramatically reduce real-world attack activity.
+This project demonstrates how insecure cloud configurations can expose systems to real-world attacks and how proper security controls significantly reduce that risk.
 
-By implementing NSG restrictions, private endpoints, and firewall rules, the attack surface was minimized and malicious traffic was effectively reduced.
+By implementing NSG restrictions, private endpoints, and firewall rules, inbound attack activity was effectively eliminated. After 24 hours of monitoring post-hardening, no new malicious activity was detected, confirming the effectiveness of the applied security measures.
+
+This highlights the importance of proactive cloud security monitoring, detection, and continuous hardening.
 
 ## Key Skills Demonstrated
 
-- Microsoft Azure  
-- Microsoft Sentinel (SIEM)  
-- Log Analytics (KQL)  
-- Network Security Groups (NSG)  
-- Cloud Security Hardening  
+- Microsoft Azure (Virtual Machines, Networking, Security Configuration)
+- Microsoft Sentinel (SIEM) – Threat Detection & Incident Analysis
+- Log Analytics & KQL – Querying and analyzing security logs
+- Network Security Groups (NSG) – Traffic filtering and access control
+- Threat Investigation – IP analysis, attack tracing, and alert validation
+- Cloud Security Hardening – Reducing attack surface and exposure
+
+## What I Learned
+
+- How attackers scan and target exposed cloud resources
+- How to use Microsoft Sentinel to detect and investigate threats
+- The importance of proper network segmentation and access control
+- How security hardening directly reduces real-world attack activity  

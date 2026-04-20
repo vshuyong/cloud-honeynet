@@ -75,7 +75,7 @@ I reviewed multiple incidents, including failed and successful login attempts as
 
 By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
 
-![Incident Details](images/incident-details.png
+![Incident Details](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/54a7643ac8176d0ae28eb261447169999a6cf597/Incident_Details.jpg)
 
 ### Attacker IP Investigation
 

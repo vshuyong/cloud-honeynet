@@ -33,6 +33,43 @@ This significantly reduced attack surface.
 
 ![After Hardening](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/ec416d99b380f1e57e5d8562473d02781eefd02c/Architecture_After.png)
 
+## Log Sources Used
+
+- Windows Event Logs (SecurityEvent)  
+- Linux Syslog Logs  
+- Microsoft Sentinel Alerts  
+- Azure Network Analytics
+
+## Attack Maps (Before Hardening)
+
+Before security controls, the environment received multiple attacks globally.
+
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/7f7e454bdd6cb438cfa334ff3df4bf4f8c35bb9c/linux_before.jpg)
+
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/77a943074b8b14fa0d468ff9f93f0218c5aa1e47/linux_before2.jpg)
+
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/79824ae4df17114107c0c7ff3bf7c202f28ae3d9/mssql_before.jpg)
+
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/12f7de76f4c02f453f61ae8a2bdf23910f2240f9/windows_before.jpg)
+
+## Attack Maps (After Hardening)
+
+After hardening, attack activity dropped significantly. After 24 hours of applying security controls, I queried the attack maps in Microsoft Sentinel. No results were returned, indicating that no malicious inbound activity was detected during that period. This confirms that the implemented hardening measures—such as restricting NSGs, removing public exposure, and enforcing private access—were effective in preventing external attacks.
+
+![Attack Map After](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/b5dde6ead6611d6f131a3c6b3cedcc1836fc7546/Attack_Map_After.jpg)
+
+## Threat Investigation & Analysis
+
+During this project, I used Microsoft Sentinel to investigate security alerts and incidents generated from the honeynet environment. This allowed me to analyze real attack activity targeting the exposed resources before hardening.
+
+### Incident Overview
+
+I reviewed multiple incidents, including failed and successful login attempts as well as brute-force attacks against both Windows and Linux virtual machines.
+
+![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/2e1c323ef1c4412d25a3f9a3f001bdcfa3da3438/Incident_Overview.jpg)
+
+![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/d352ef755c1be71a5f0213790116445e18b9671e/Incident_overview2.jpg)
+
 ## Threat Investigation & Analysis
 
 During this project, I used Microsoft Sentinel to investigate security alerts and incidents generated from the honeynet environment. This allowed me to analyze real attack activity targeting the exposed resources before hardening.
@@ -83,30 +120,43 @@ This information provided visibility into where the attacks were originating fro
 The investigation confirmed that the environment was actively targeted before hardening. After implementing security controls and monitoring the environment for 24 hours, no new attack activity was observed in the logs or maps. This demonstrates that the applied security measures were effective in preventing further unauthorized access.
 
 
-## Log Sources Used
 
-- Windows Event Logs (SecurityEvent)  
-- Linux Syslog Logs  
-- Microsoft Sentinel Alerts  
-- Azure Network Analytics
+### Incident Analysis
 
-## Attack Maps (Before Hardening)
+By exploring individual incidents, I was able to examine alert details, timelines, and affected assets. This helped me understand how attackers were attempting to gain unauthorized access and how the system responded to these threats.
 
-Before security controls, the environment received multiple attacks globally.
+![Incident Details](images/incident-details.png)
 
-![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/7f7e454bdd6cb438cfa334ff3df4bf4f8c35bb9c/linux_before.jpg)
+---
 
-![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/77a943074b8b14fa0d468ff9f93f0218c5aa1e47/linux_before2.jpg)
+### Attacker IP Investigation
 
-![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/79824ae4df17114107c0c7ff3bf7c202f28ae3d9/mssql_before.jpg)
+Using Microsoft Sentinel’s investigation features, I analyzed attacker IP addresses and gathered detailed threat intelligence. This included:
 
-![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/12f7de76f4c02f453f61ae8a2bdf23910f2240f9/windows_before.jpg)
+- Geographic location (country, city)  
+- Internet Service Provider (ISP)  
+- ASN (Autonomous System Number)  
+- Latitude and Longitude  
 
-## Attack Maps (After Hardening)
+This information provided visibility into where the attacks were originating from and helped identify patterns in malicious activity.
 
-After hardening, attack activity dropped significantly. After 24 hours of applying security controls, I queried the attack maps in Microsoft Sentinel. No results were returned, indicating that no malicious inbound activity was detected during that period. This confirms that the implemented hardening measures—such as restricting NSGs, removing public exposure, and enforcing private access—were effective in preventing external attacks.
+![IP Investigation](images/ip-investigation.png)
 
-![Attack Map After](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/b5dde6ead6611d6f131a3c6b3cedcc1836fc7546/Attack_Map_After.jpg)
+---
+
+### Findings
+
+- Multiple brute-force attempts were detected from external IP addresses  
+- Attackers originated from different global locations  
+- Repeated login attempts targeted publicly exposed virtual machines  
+- High-severity alerts were generated for credential access attempts  
+
+---
+
+### Outcome
+
+The investigation confirmed that the environment was actively targeted before hardening. After implementing security controls and monitoring the environment for 24 hours, no new attack activity was observed in the logs or maps. This demonstrates that the applied security measures were effective in preventing further unauthorized access.
+
 
 
 ## Conclusion

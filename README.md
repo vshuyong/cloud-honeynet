@@ -45,7 +45,7 @@ This significantly reduced attack surface.
 
 Before security controls, the environment received multiple attacks globally.
 
-![Attack Map Before](images/map-before.png)](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/7f7e454bdd6cb438cfa334ff3df4bf4f8c35bb9c/linux_before.jpg)
+![Attack Map Before](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/7f7e454bdd6cb438cfa334ff3df4bf4f8c35bb9c/linux_before.jpg)
 
 
 ## Attack Maps (After Hardening)

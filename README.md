@@ -43,6 +43,8 @@ I reviewed multiple incidents, including failed and successful login attempts as
 
 ![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/2e1c323ef1c4412d25a3f9a3f001bdcfa3da3438/Incident_Overview.jpg)
 
+![Incident Overview](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/d352ef755c1be71a5f0213790116445e18b9671e/Incident_overview2.jpg)
+
 
 ### Incident Analysis
 

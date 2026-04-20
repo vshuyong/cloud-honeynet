@@ -1,6 +1,6 @@
 # Cloud-honeynet-security-architecture
 
-![image alt]((https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/dc34a0875b45f9cfff9fac7c064d913876aefdbb/Architecture_overview.png)
+![image alt](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/dc34a0875b45f9cfff9fac7c064d913876aefdbb/Architecture_overview.png)
 
 Azure cloud honeynet project using Microsoft Sentinel to detect, analyze, and reduce real-world attacks through security hardening.
 ## Introduction

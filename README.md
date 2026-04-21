@@ -1,4 +1,4 @@
-# Cloud-honeynet-security-architecture
+# Cloud-honeynet
 
 ![image alt](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/dc34a0875b45f9cfff9fac7c064d913876aefdbb/Architecture_overview.png)
 

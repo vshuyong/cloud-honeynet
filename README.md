@@ -1,5 +1,6 @@
 # Cloud-Honeynet & SOC Simulation
 
+
 ![Cloud Honeynet Architecture](Cloud_Security_Honeypot_Architecture.drawio.png)
 Azure cloud honeynet project using Microsoft Sentinel to detect, analyze, and reduce real-world attacks through security hardening.
 ## Introduction

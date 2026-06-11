@@ -1,7 +1,6 @@
 # Cloud-Honeynet & SOC Simulation
 
-![image alt](https://github.com/vshuyong/Cloud-Security-Honeypot-Architecture/blob/dc34a0875b45f9cfff9fac7c064d913876aefdbb/Architecture_overview.png)
-
+![Cloud Honeynet Architecture](Cloud_Security_Honeypot_Architecture.drawio.png)
 Azure cloud honeynet project using Microsoft Sentinel to detect, analyze, and reduce real-world attacks through security hardening.
 ## Introduction
 In this project, I built a mini honeynet in Microsoft Azure and integrated multiple log sources into a Log Analytics Workspace. Microsoft Sentinel was then used to analyze logs, generate alerts, and visualize attacks.

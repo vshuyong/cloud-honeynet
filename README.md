@@ -30,8 +30,7 @@ After applying security controls:
 
 This significantly reduced attack surface.
 
-![After Hardening](https://github.com/vshuyong/Cloud-honeynet-security-architecture/blob/ec416d99b380f1e57e5d8562473d02781eefd02c/Architecture_After.png)
-
+![After Hardening](Architecture_After_hardening.drawio.png)
 ## Log Sources Used
 
 - Windows Event Logs (SecurityEvent)  
